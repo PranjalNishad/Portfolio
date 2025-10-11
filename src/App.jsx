@@ -57,6 +57,13 @@ export default function App() {
     },
   ];
 
+  const skills = {
+    frontend: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
+    backend: ["Node.js", "Express.js", "MongoDB",],
+    programming: ["Python", "Java (Basics)", "C/C++ (Basics)"],
+    tools: ["Git", "GitHub", "VS Code", "Postman", "Docker", "AWS Basics"],
+  };
+
   return (
     <div className="app dark">
       {/* Navbar */}
@@ -94,16 +101,14 @@ export default function App() {
               Full-Stack Developer | B.Tech CSE Student | Tech Enthusiast
             </h4>
             <p>
-              A passionate <strong>Computer Science Engineering student</strong> who
-              loves transforming creative ideas into interactive digital
-              experiences. I specialize in modern frontend frameworks like{" "}
-              <strong>React.js</strong> and backend tools such as{" "}
-              <strong>Node.js</strong> and <strong>MongoDB</strong>.
+              A passionate <strong>Computer Science Engineering student</strong> who loves transforming creative
+              ideas into interactive web experiences. I specialize in modern frontend
+              frameworks like <strong>React.js</strong> and have experience with backend tools like
+              <strong> Node.js</strong> and <strong>MongoDB</strong>.
             </p>
             <p>
-              I focus on creating clean, performant, and visually appealing
-              applications that improve user experience and solve real-world
-              problems.
+              I believe in continuous learning, building real-world projects, and
+              creating solutions that are not only functional but also beautiful.
             </p>
             <div className="hero-buttons">
               <a href="#projects" className="btn">
@@ -126,16 +131,15 @@ export default function App() {
         <p className="section-subtitle">Who I am and what I do</p>
         <div className="about-container">
           <p>
-            I’m <strong>Pranjal Nishad</strong>, a dedicated and ambitious{" "}
-            <strong>B.Tech Computer Science student</strong> from{" "}
-            <strong>KIPM Institute of Information and Technology</strong>. I’m
-            passionate about designing and developing interactive, accessible, and
-            responsive web applications.
+            I’m <strong>Pranjal Nishad</strong>, a dedicated and ambitious
+            <strong> B.Tech Computer Science student</strong> at
+            <strong> KIPM Institute of Information and Technology</strong>. I’m passionate about designing and
+            developing interactive, accessible, and responsive web applications.
           </p>
           <p>
-            My goal is to become a skilled software engineer with expertise in{" "}
-            <strong>full-stack web development</strong> and UI/UX design, crafting
-            seamless digital experiences that balance creativity and functionality.
+            My main goal is to become a well-rounded software engineer with a strong
+            focus on full-stack web development and UI/UX design. I love experimenting
+            with modern tech tools and bringing ideas to life through clean code.
           </p>
         </div>
       </section>
@@ -143,9 +147,7 @@ export default function App() {
       {/* Projects Section */}
       <section id="projects" className="projects section">
         <h3>My Projects</h3>
-        <p className="section-subtitle">
-          Featured works with live demos and source code
-        </p>
+        <p className="section-subtitle">Featured works with live demos and source code</p>
         <div className="project-grid">
           {projects.map((p, i) => (
             <motion.div
@@ -190,7 +192,24 @@ export default function App() {
         </div>
       </section>
 
-      {/* Resume */}
+      {/* Skills Section */}
+      <section id="skills" className="skills section">
+        <h3>Technical Skills</h3>
+        <div className="skills-grid">
+          {Object.entries(skills).map(([category, items]) => (
+            <div key={category}>
+              <h4>{category.charAt(0).toUpperCase() + category.slice(1)}</h4>
+              <div className="skill-list">
+                {items.map((s, i) => (
+                  <span key={i}>{s}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Resume Section */}
       <section id="resume" className="resume section">
         <h3>My Resume</h3>
         <p className="section-subtitle">Preview or download my resume below</p>
