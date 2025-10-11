@@ -215,7 +215,7 @@ export default function App() {
         <p className="section-subtitle">Preview or download my resume below</p>
         <motion.div className="resume-card glass">
           <img
-            src="/projects/resme.png"
+            src="/projects/resume-preview.png"
             alt="Resume Preview"
             className="resume-preview"
           />
