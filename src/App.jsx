@@ -9,7 +9,7 @@ export default function App() {
   const projects = [
     {
       title: "Bee Information Website",
-      desc: "An educational website about bees and wasps with clean UI built using HTML, CSS, and JavaScript.",
+      desc: "Educational website about bees and wasps with clean UI built using HTML, CSS, and JavaScript.",
       img: "/projects/bee.png",
       tags: ["HTML", "CSS", "JavaScript"],
       demo: "https://waspinformation-website.vercel.app/",
@@ -68,7 +68,9 @@ export default function App() {
     <div className="app dark">
       {/* Navbar */}
       <header className="navbar glass">
-        <h1 className="logo">Pranjal <span>Nishad</span></h1>
+        <h1 className="logo">
+          Pranjal <span>Nishad</span>
+        </h1>
         <nav className={menuOpen ? "nav active" : "nav"}>
           <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
@@ -97,20 +99,14 @@ export default function App() {
               Full-Stack Developer | B.Tech CSE Student | Tech Enthusiast
             </h4>
             <p>
-              I’m a passionate <strong>Computer Science Engineering student</strong> with a
-              strong foundation in web technologies. I love transforming creative
-              ideas into functional, scalable, and user-focused web applications.
+              A passionate <strong>Computer Science Engineering student</strong> who loves transforming creative
+              ideas into interactive web experiences. I specialize in modern frontend
+              frameworks like <strong>React.js</strong> and have experience with backend tools like
+              <strong> Node.js</strong> and <strong>MongoDB</strong>.
             </p>
             <p>
-              My technical interests lie in <strong>frontend development</strong> using React.js
-              and <strong>backend development</strong> with Node.js and MongoDB. I believe in writing
-              clean, efficient, and maintainable code that delivers both performance
-              and elegance.
-            </p>
-            <p>
-              I’m a quick learner, problem solver, and team collaborator, eager to work
-              on impactful projects that challenge my skills and help me grow as a
-              developer every single day.
+              I believe in continuous learning, building real-world projects, and
+              creating solutions that are not only functional but also beautiful.
             </p>
             <div className="hero-buttons">
               <a href="#projects" className="btn">Explore My Work</a>
@@ -126,37 +122,26 @@ export default function App() {
       {/* About Section */}
       <section id="about" className="about section">
         <h3>About Me</h3>
-        <p className="section-subtitle">A deeper look into my journey and goals</p>
+        <p className="section-subtitle">Who I am and what I do</p>
         <div className="about-container">
           <p>
-            I’m <strong>Pranjal Nishad</strong>, a <strong>B.Tech Computer Science student</strong> from
-            <strong> KIPM Institute of Information and Technology</strong>. I’m driven by
-            curiosity and innovation, and I believe technology has the power to simplify
-            and improve lives.
+            I’m <strong>Pranjal Nishad</strong>, a dedicated and ambitious
+            <strong> B.Tech Computer Science student</strong> at
+            <strong> KIPM Institute of Information and Technology</strong>. I’m passionate about designing and
+            developing interactive, accessible, and responsive web applications.
           </p>
           <p>
-            My focus lies in <strong>frontend engineering</strong> and <strong>UI design</strong>, where I bring
-            ideas to life through code. I’ve developed multiple projects involving
-            <strong> React.js, JavaScript, and APIs</strong>, along with basic backend
-            integration using Node.js and MongoDB.
-          </p>
-          <p>
-            I’m deeply passionate about clean design, performance, and accessibility.
-            I constantly learn new tools, experiment with technologies, and work toward
-            building full-stack solutions that make an impact.
-          </p>
-          <p>
-            My goal is to work in a forward-thinking company where I can contribute
-            to product development, collaborate with inspiring professionals, and
-            continue to evolve as a software engineer.
+            My main goal is to become a well-rounded software engineer with a strong
+            focus on full-stack web development and UI/UX design. I love experimenting
+            with modern tech tools and bringing ideas to life through clean code.
           </p>
         </div>
       </section>
 
-      {/* Projects */}
+      {/* Projects Section */}
       <section id="projects" className="projects section">
         <h3>My Projects</h3>
-        <p className="section-subtitle">A showcase of my practical work</p>
+        <p className="section-subtitle">Featured works with live demos and source code</p>
         <div className="project-grid">
           {projects.map((p, i) => (
             <motion.div className="project-card glass" key={i} whileHover={{ scale: 1.04 }}>
@@ -190,7 +175,6 @@ export default function App() {
       {/* Skills Section */}
       <section id="skills" className="skills section">
         <h3>Technical Skills</h3>
-        <p className="section-subtitle">Technologies and tools I use</p>
         <div className="skills-grid">
           {Object.entries(skills).map(([category, items]) => (
             <div key={category}>
@@ -205,40 +189,10 @@ export default function App() {
         </div>
       </section>
 
-      {/* Education Section */}
-      <section id="education" className="education section">
-        <h3>Education</h3>
-        <p className="section-subtitle">My academic journey and milestones</p>
-        <div className="timeline">
-          <div className="timeline-item">
-            <div className="timeline-dot"></div>
-            <div className="timeline-content">
-              <h4>B.Tech in Computer Science & Engineering</h4>
-              <p>KIPM Institute of Information and Technology, Gorakhpur</p>
-              <span>2023 – Present</span>
-            </div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-dot"></div>
-            <div className="timeline-content">
-              <h4>Class 12th – Oxford Public School</h4>
-              <span>Completed in 2022 (CBSE)</span>
-            </div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-dot"></div>
-            <div className="timeline-content">
-              <h4>Class 10th – Oxford Public School</h4>
-              <span>Completed in 2020 (CBSE)</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Resume Section */}
       <section id="resume" className="resume section">
         <h3>My Resume</h3>
-        <p className="section-subtitle">You can preview or download my resume below</p>
+        <p className="section-subtitle">Preview or download my resume below</p>
         <motion.div className="resume-card glass">
           <img src="/projects/resume-preview.png" alt="Resume Preview" className="resume-preview" />
           <div className="resume-buttons">
