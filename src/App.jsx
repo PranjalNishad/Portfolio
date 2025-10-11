@@ -57,13 +57,6 @@ export default function App() {
     },
   ];
 
-  const skills = {
-    frontend: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
-    backend: ["Node.js", "Express.js", "MongoDB", "MySQL"],
-    programming: ["Python", "Java", "C/C++ (Basics)"],
-    tools: ["Git", "GitHub", "VS Code", "Postman", "Docker", "AWS Basics"],
-  };
-
   return (
     <div className="app dark">
       {/* Navbar */}
@@ -94,23 +87,31 @@ export default function App() {
           transition={{ duration: 0.6 }}
         >
           <div className="hero-text">
-            <h2>Hi, I'm <span>Pranjal Nishad</span></h2>
+            <h2>
+              Hi, I'm <span>Pranjal Nishad</span>
+            </h2>
             <h4 className="hero-subtitle">
               Full-Stack Developer | B.Tech CSE Student | Tech Enthusiast
             </h4>
             <p>
-              A passionate <strong>Computer Science Engineering student</strong> who loves transforming creative
-              ideas into interactive web experiences. I specialize in modern frontend
-              frameworks like <strong>React.js</strong> and have experience with backend tools like
-              <strong> Node.js</strong> and <strong>MongoDB</strong>.
+              A passionate <strong>Computer Science Engineering student</strong> who
+              loves transforming creative ideas into interactive digital
+              experiences. I specialize in modern frontend frameworks like{" "}
+              <strong>React.js</strong> and backend tools such as{" "}
+              <strong>Node.js</strong> and <strong>MongoDB</strong>.
             </p>
             <p>
-              I believe in continuous learning, building real-world projects, and
-              creating solutions that are not only functional but also beautiful.
+              I focus on creating clean, performant, and visually appealing
+              applications that improve user experience and solve real-world
+              problems.
             </p>
             <div className="hero-buttons">
-              <a href="#projects" className="btn">Explore My Work</a>
-              <a href="#resume" className="btn-outline">Download Resume</a>
+              <a href="#projects" className="btn">
+                Explore My Work
+              </a>
+              <a href="#resume" className="btn-outline">
+                Download Resume
+              </a>
             </div>
           </div>
           <motion.div className="profile-pic-container" whileHover={{ scale: 1.05 }}>
@@ -125,15 +126,16 @@ export default function App() {
         <p className="section-subtitle">Who I am and what I do</p>
         <div className="about-container">
           <p>
-            I’m <strong>Pranjal Nishad</strong>, a dedicated and ambitious
-            <strong> B.Tech Computer Science student</strong> at
-            <strong> KIPM Institute of Information and Technology</strong>. I’m passionate about designing and
-            developing interactive, accessible, and responsive web applications.
+            I’m <strong>Pranjal Nishad</strong>, a dedicated and ambitious{" "}
+            <strong>B.Tech Computer Science student</strong> from{" "}
+            <strong>KIPM Institute of Information and Technology</strong>. I’m
+            passionate about designing and developing interactive, accessible, and
+            responsive web applications.
           </p>
           <p>
-            My main goal is to become a well-rounded software engineer with a strong
-            focus on full-stack web development and UI/UX design. I love experimenting
-            with modern tech tools and bringing ideas to life through clean code.
+            My goal is to become a skilled software engineer with expertise in{" "}
+            <strong>full-stack web development</strong> and UI/UX design, crafting
+            seamless digital experiences that balance creativity and functionality.
           </p>
         </div>
       </section>
@@ -141,10 +143,16 @@ export default function App() {
       {/* Projects Section */}
       <section id="projects" className="projects section">
         <h3>My Projects</h3>
-        <p className="section-subtitle">Featured works with live demos and source code</p>
+        <p className="section-subtitle">
+          Featured works with live demos and source code
+        </p>
         <div className="project-grid">
           {projects.map((p, i) => (
-            <motion.div className="project-card glass" key={i} whileHover={{ scale: 1.04 }}>
+            <motion.div
+              className="project-card glass"
+              key={i}
+              whileHover={{ scale: 1.04 }}
+            >
               <div className="project-image">
                 <img src={p.img} alt={p.title} />
               </div>
@@ -158,11 +166,21 @@ export default function App() {
                 </div>
                 <div className="links">
                   {p.demo !== "#" && (
-                    <a href={p.demo} className="btn-sm" target="_blank" rel="noreferrer">
+                    <a
+                      href={p.demo}
+                      className="btn-sm"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Live Demo
                     </a>
                   )}
-                  <a href={p.code} className="btn-outline-sm" target="_blank" rel="noreferrer">
+                  <a
+                    href={p.code}
+                    className="btn-outline-sm"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Code
                   </a>
                 </div>
@@ -172,41 +190,33 @@ export default function App() {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section id="skills" className="skills section">
-        <h3>Technical Skills</h3>
-        <div className="skills-grid">
-          {Object.entries(skills).map(([category, items]) => (
-            <div key={category}>
-              <h4>{category.charAt(0).toUpperCase() + category.slice(1)}</h4>
-              <div className="skill-list">
-                {items.map((s, i) => (
-                  <span key={i}>{s}</span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Resume Section */}
+      {/* Resume */}
       <section id="resume" className="resume section">
         <h3>My Resume</h3>
         <p className="section-subtitle">Preview or download my resume below</p>
         <motion.div className="resume-card glass">
-          <img src="/projects/resume-preview.png" alt="Resume Preview" className="resume-preview" />
+          <img
+            src="/projects/resume-preview.png"
+            alt="Resume Preview"
+            className="resume-preview"
+          />
           <div className="resume-buttons">
             <a href="/Pranjal_Resume.pdf" download className="btn">
               <FileDown size={18} /> Download Resume
             </a>
-            <a href="/Pranjal_Resume.pdf" target="_blank" rel="noreferrer" className="btn-outline">
+            <a
+              href="/Pranjal_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline"
+            >
               <ExternalLink size={18} /> View Online
             </a>
           </div>
         </motion.div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact */}
       <section id="contact" className="contact section">
         <h3>Contact Me</h3>
         <p className="section-subtitle">
@@ -216,12 +226,18 @@ export default function App() {
           <div className="contact-card">
             <i className="fa-solid fa-envelope"></i>
             <h4>Email</h4>
-            <a href="mailto:nishadpranjal450@gmail.com">nishadpranjal450@gmail.com</a>
+            <a href="mailto:nishadpranjal450@gmail.com">
+              nishadpranjal450@gmail.com
+            </a>
           </div>
           <div className="contact-card">
             <i className="fa-brands fa-github"></i>
             <h4>GitHub</h4>
-            <a href="https://github.com/PranjalNishad" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/PranjalNishad"
+              target="_blank"
+              rel="noreferrer"
+            >
               PranjalNishad
             </a>
           </div>
@@ -240,7 +256,8 @@ export default function App() {
       </section>
 
       <footer className="footer">
-        © {new Date().getFullYear()} <strong>Pranjal Nishad</strong> | Built with ❤️ using React
+        © {new Date().getFullYear()} <strong>Pranjal Nishad</strong> | Built with ❤️
+        using React
       </footer>
     </div>
   );
