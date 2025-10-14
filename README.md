@@ -1,17 +1,84 @@
 # Portfolio
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal portfolio built using **React** + **Vite**, deployed on Vercel.  
+Showcases projects, skills, and contact details in a clean, responsive layout.
 
-Currently, two official plugins are available:
+[Live Demo ↗](https://portfolio-five-sigma-0ly72v105o.vercel.app)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tech Stack & Tools
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Layer | Technology |
+|---|---|
+| Framework | React |
+| Bundler / Dev Tooling | Vite |
+| Linting / Formatting | ESLint, Prettier |
+| Deployment | Vercel |
+| Languages | JavaScript, HTML, CSS |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🗂️ Project Structure
+
+/
+├── public/ # Static assets (images, icons, etc.)
+├── src/
+│ ├── components/ # Reusable React components
+│ ├── pages/ # Page-level components (Home, About, Projects, etc.)
+│ ├── styles/ # CSS / module styles
+│ ├── App.jsx # Root application container
+│ └── main.jsx # Entry point
+├── .gitignore
+├── package.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
+
+---
+
+## 🎯 Features
+
+- Fully responsive design for mobile, tablet, and desktop
+- Section navigation (About, Projects, Skills, Contact)
+- Project cards with links to GitHub / live demos
+- Dark / light mode toggle (if you add this)
+- Easy to extend and customize
+
+---
+
+## 🛠️ Setup / Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/PranjalNishad/Portfolio.git
+   cd Portfolio
+   
+Install dependencies:
+
+    ```bash
+        npm install
+    # or
+        yarn install
+      
+Start development server:
+
+    ```bash
+      npm run dev
+    # or
+      yarn dev
+
+Build for production:
+
+    ```bash
+        npm run build
+    # or
+        yarn build
+
+Preview production build locally:
+
+    ```bash
+        npm run preview
+    # or
+        yarn preview
