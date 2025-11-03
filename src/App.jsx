@@ -48,6 +48,15 @@ export default function App() {
       code: "https://github.com/PranjalNishad/Weather-App-",
     },
     {
+      title: "GTA-6 Project",
+      desc: "Front-end demo clone of the GTA VI promotional site, built with HTML, CSS & JavaScript. Shows animations and interactive UI.",
+      img: "/projects/gta6.png",  // -> you’ll need a screenshot added into public/projects/gta6.png
+      tags: ["HTML", "CSS", "JavaScript"],
+      demo: "https://gta-6-amber.vercel.app/",  // replace with live link if hosted
+      code: "https://github.com/PranjalNishad/GTA-6"
+    },
+
+    {
       title: "College Chatbot",
       desc: "Interactive chatbot for college-related queries built using JavaScript.",
       img: "/projects/chatbot.png",
