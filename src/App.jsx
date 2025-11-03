@@ -220,11 +220,11 @@ export default function App() {
             className="resume-preview"
           />
           <div className="resume-buttons">
-            <a href="/Pranjal_Resume.pdf" download className="btn">
+            <a href="/PRANJAL_NISHAD_RESUME.pdf" download className="btn">
               <FileDown size={18} /> Download Resume
             </a>
             <a
-              href="/Pranjal_Resume.pdf"
+              href="/PRANJAL_NISHAD_RESUME.pdf"
               target="_blank"
               rel="noreferrer"
               className="btn-outline"
