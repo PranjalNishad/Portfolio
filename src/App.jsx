@@ -64,12 +64,21 @@ export default function App() {
       demo: "#",
       code: "https://github.com/PranjalNishad/College-chatbot",
     },
+
+    {
+      title: "3d-Startup LAnding Page",
+      desc: "A fully responsive Tailwind landing page for MCODE, showcasing an email service for developers with a modern dark UI and 3D visuals.",
+      img: "/projects/landing.png",
+      tags: ["JavaScript", "React", "Tailwind css"],
+      demo: "https://landing-page-nu-nine-27.vercel.app/",
+      code: "https://github.com/PranjalNishad/3d-startup-landing_page",
+    },
   ];
 
   const skills = {
-    frontend: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
+    frontend: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS","Typescript"],
     backend: ["Node.js", "Express.js", "MongoDB",],
-    programming: ["Python", "Java (Basics)", "C/C++ (Basics)"],
+    programming: ["Python","JavaScript","Typescript", "Java (Basics)", "C/C++ (Basics)"],
     tools: ["Git", "GitHub", "VS Code", "Postman", "Docker", "AWS Basics"],
   };
 
@@ -229,11 +238,11 @@ export default function App() {
             className="resume-preview"
           />
           <div className="resume-buttons">
-            <a href="/PRANJAL_NISHAD_RESUME.pdf" download className="btn">
+            <a href="/UPDATED_RESUME.pdf" download className="btn">
               <FileDown size={18} /> Download Resume
             </a>
             <a
-              href="/PRANJAL_NISHAD_RESUME.pdf"
+              href="/UPDATED_RESUME.pdf"
               target="_blank"
               rel="noreferrer"
               className="btn-outline"
